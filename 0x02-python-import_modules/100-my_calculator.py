@@ -16,11 +16,11 @@ if __name__ == "__main__":
         if a[2] == "+":
             print("{} + {} = {}".format(a[1], a[3], cal.add(a[1], a[3])))
         elif a[2] == "-":
-            print("{} + {} = {}".format(a[1], a[3], cal.sub(a[1], a[3])))
+            print("{} - {} = {}".format(a[1], a[3], cal.sub(a[1], a[3])))
         elif a[2] == "*":
-            print("{} + {} = {}".format(a[1], a[3], cal.mul(a[1], a[3])))
+            print("{} * {} = {}".format(a[1], a[3], cal.mul(a[1], a[3])))
         elif a[2] == "/":
-            print("{} + {} = {}".format(a[1], a[3], cal.div(a[1], a[3])))
+            print("{} / {} = {}".format(a[1], a[3], cal.div(a[1], a[3])))
         else:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
