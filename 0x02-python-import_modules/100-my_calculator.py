@@ -3,24 +3,24 @@
 if __name__ == "__main__":
     import calculator_1 as cal
     from sys import exit
-    from sys import argv
+    from sys import argv as a
 
-    args = len(argv) - 1
+    args = len(a) - 1
 
     if args != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     else:
-        argv[1] = int(argv[1])
-        argv[3] = int(argv[3])
-        if argv[2] == "+":
-            print("{} + {} = {}".format(argv[1], argv[3], cal.add(argv[1], argv[3])))
-        elif argv[2] == "-":
-            print("{} + {} = {}".format(argv[1], argv[3], cal.sub(argv[1], argv[3])))
-        elif argv[2] == "*":
-            print("{} + {} = {}".format(argv[1], argv[3], cal.mul(argv[1], argv[3])))
-        elif argv[2] == "/":
-            print("{} + {} = {}".format(argv[1], argv[3], cal.div(argv[1], argv[3])))
+        a[1] = int(a[1])
+        a[3] = int(a[3])
+        if a[2] == "+":
+            print("{} + {} = {}".format(a[1], a[3], cal.add(a[1], a[3])))
+        elif a[2] == "-":
+            print("{} + {} = {}".format(a[1], a[3], cal.sub(a[1], a[3])))
+        elif a[2] == "*":
+            print("{} + {} = {}".format(a[1], a[3], cal.mul(a[1], a[3])))
+        elif a[2] == "/":
+            print("{} + {} = {}".format(a[1], a[3], cal.div(a[1], a[3])))
         else:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
