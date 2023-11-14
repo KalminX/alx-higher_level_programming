@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
         number = 0
         length = len(roman_string)
         for i in range(length):
-            if roman_int_dict[roman_reversed[i]] < roman_int_dict[roman_reversed[i - 1]] and i -1 > 0:
+            if roman_int_dict[roman_reversed[i]] < roman_int_dict[roman_reversed[i - 1]] and i -1 >= 0:
                 number -= roman_int_dict[roman_reversed[i]]
             else:
                 number += roman_int_dict[roman_reversed[i]]
