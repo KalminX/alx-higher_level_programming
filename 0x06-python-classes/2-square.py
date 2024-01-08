@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """2-square.py"""
+
+
 class Square:
     """A square class"""
     def __init__(self, size=0):
