@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-def Rectangle:
+"""
+    My rectangle module
+"""
+class Rectangle:
+    """My rectangle class"""
     pass
