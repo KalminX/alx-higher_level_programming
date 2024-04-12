@@ -2,6 +2,6 @@
 """
     My rectangle module
 """
+
 class Rectangle:
     """My rectangle class"""
-    pass
