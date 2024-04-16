@@ -1,21 +1,23 @@
-import unittest
+>>> from mylist import MyList
 
-class TestMyFunction(unittest.TestCase):
-    def setUp(self):
-        # This method will be called before each test, you can set up variables here
-        pass
+>>> # Create an instance of MyList
+>>> my_list = MyList([3, 1, 2])
 
-    def tearDown(self):
-        # This method will be called after each test, you can clean up variables here
-        pass
+>>> # Print the original list
+>>> my_list
+[3, 1, 2]
 
-    def test_case_1(self):
-        # Write your test case here
-        self.assertEqual(1, 1)
+>>> # Call the print_sorted method
+>>> my_list.print_sorted()
+[1, 2, 3]
 
-    def test_case_2(self):
-        # Write your test case here
-        self.assertEqual(2, 2)
+>>> # Add an element to the list
+>>> my_list.append(0)
 
-if __name__ == '__main__':
-    unittest.main()
+>>> # Print the updated list
+>>> my_list
+[3, 1, 2, 0]
+
+>>> # Call the print_sorted method again
+>>> my_list.print_sorted()
+[0, 1, 2, 3]

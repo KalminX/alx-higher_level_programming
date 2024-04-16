@@ -1,0 +1,25 @@
+>>> from geometry import BaseGeometry
+
+>>> # Create an instance of BaseGeometry
+>>> geometry = BaseGeometry()
+
+>>> # Attempt to call the area method
+>>> geometry.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+>>> # Attempt to validate an integer value
+>>> geometry.integer_validator("side", 5)
+
+>>> # Attempt to validate a non-integer value
+>>> geometry.integer_validator("side", "five")
+Traceback (most recent call last):
+    ...
+TypeError: side must be an integer
+
+>>> # Attempt to validate a negative integer value
+>>> geometry.integer_validator("side", -5)
+Traceback (most recent call last):
+    ...
+ValueError: side must be greater than 0
