@@ -1,0 +1,21 @@
+import unittest
+
+class TestMyFunction(unittest.TestCase):
+    def setUp(self):
+        # This method will be called before each test, you can set up variables here
+        pass
+
+    def tearDown(self):
+        # This method will be called after each test, you can clean up variables here
+        pass
+
+    def test_case_1(self):
+        # Write your test case here
+        self.assertEqual(1, 1)
+
+    def test_case_2(self):
+        # Write your test case here
+        self.assertEqual(2, 2)
+
+if __name__ == '__main__':
+    unittest.main()
