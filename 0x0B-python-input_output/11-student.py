@@ -18,7 +18,7 @@ class Student:
                     if key in attrs}
         else:
             return self.__dict__
-    
+
     def reload_from_json(self, json):
         """Method to append to a file"""
         for key, value in json.items():
