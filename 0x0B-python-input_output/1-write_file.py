@@ -2,7 +2,7 @@
 """My file module"""
 
 
-def append_write(filename="", text=""):
+def write_file(filename="", text=""):
     """Method to append to a file"""
     with open(filename, 'a', encoding="UTF-8") as f:
         update = f.write(text)
