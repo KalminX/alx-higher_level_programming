@@ -3,7 +3,6 @@
 from base import Base
 
 
-
 class Rectangle(Base):
     """Rectangle class inherits from Base."""
 
@@ -87,7 +86,7 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
     
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update the rectangle's attributes."""
         if args:
             for i, arg in enumerate(args):
@@ -101,3 +100,6 @@ class Rectangle(Base):
                     self.x = arg
                 elif i == 4:
                     self.y = arg
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
