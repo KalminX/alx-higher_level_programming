@@ -13,6 +13,8 @@ function factorial(n) {
 
 if (argv.length === 2) {
   console.log(1);
-} else {
+} else if (!isNaN(argv[2])) {
   console.log(factorial(Number(argv[2])));
+} else {
+  console.log(1);
 }
