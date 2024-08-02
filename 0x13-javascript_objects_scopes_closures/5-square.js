@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w === undefined || h === undefined) {
       return this;
     }
@@ -10,32 +10,34 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     for (let i = 0; i < this.height; i++) {
-      let span = "";
+      let span = '';
       for (let i = 0; i < this.width; i++) {
-        span += "X";
+        span += 'X';
       }
       console.log(span);
     }
   }
-  double() {
+
+  double () {
     this.width += 2;
     this.height *= 2;
   }
-  rotate() {
-    let [x, y] = [this.width, this.height]
+
+  rotate () {
+    const [x, y] = [this.width, this.height];
     this.width = y;
     this.height = x;
   }
 }
 
-
 class Square extends Rectangle {
-    constructor (size) {
-        super(size, size);
-        this.size = size;
-    }
+  constructor (size) {
+    super(size, size);
+    this.size = size;
+  }
 }
 
 module.exports = Rectangle;

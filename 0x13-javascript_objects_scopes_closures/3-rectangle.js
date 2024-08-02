@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w === undefined || h === undefined) {
       return this;
     }
@@ -10,13 +10,14 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     for (let i = 0; i < this.height; i++) {
-        let span = "";
-        for (let i = 0; i < this.width; i++) {
-          span+="X";
-        }
-        console.log(span);
+      let span = '';
+      for (let i = 0; i < this.width; i++) {
+        span += 'X';
+      }
+      console.log(span);
     }
   }
 }
