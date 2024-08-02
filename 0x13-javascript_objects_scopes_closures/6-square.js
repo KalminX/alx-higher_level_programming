@@ -34,11 +34,12 @@ class Rectangle {
 class Square extends Rectangle {
   constructor(size) {
     super(size, size);
+    this.size = size;
   }
-  charPrint(c) {
-    let char = c ?? "X";
+  charPrint(c = 'X') {
+    let char = c;
     for (let i = 0; i < this.size; i++) {
-      let span = char;
+      let span = "";
       for (let i = 0; i < this.size; i++) {
         span += char;
       }
