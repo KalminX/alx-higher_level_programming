@@ -13,23 +13,17 @@ class Rectangle {
 
   print () {
     for (let i = 0; i < this.height; i++) {
-      let span = '';
-      for (let i = 0; i < this.width; i++) {
-        span += 'X';
-      }
-      console.log(span);
+      console.log('X'.repeat(this.width));
     }
   }
 
   double () {
-    this.width += 2;
+    this.width *= 2;
     this.height *= 2;
   }
 
   rotate () {
-    const [x, y] = [this.width, this.height];
-    this.width = y;
-    this.height = x;
+    [this.width, this.height] = [this.height, this.width];
   }
 }
 
