@@ -21,7 +21,7 @@ request(argv[2], function (error, response, body) {
   completedTasks.forEach(x => {
     const userId = x.userId;
     if (!(userId in tasksCount)) {
-      tasksCount[userId] = 0;
+      tasksCount[userId] = 1;
     } else {
       tasksCount[userId] += 1;
     }
